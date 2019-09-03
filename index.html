@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <title>Realtor Gallery Demo</title>
 </head>
@@ -23,7 +24,7 @@
                     <a href="" class="btn">See Details</a>
                 </div>
             </section>
-            <section class="card">
+            <section class="card" data-aos="fade-left">
                 <img src="assets/images/home_2.png"" alt="">
                 <div>
                     <h3>Home Two</h3>
@@ -31,7 +32,7 @@
                     <a href="" class="btn">See Details</a>
                 </div>
             </section>
-            <section class="card">
+            <section class="card" data-aos="fade-right">
                 <img src="assets/images/home_3.png"" alt="">
                 <div>
                     <h3>Home Three</h3>
@@ -39,7 +40,7 @@
                     <a href="" class="btn">See Details</a>
                 </div>
             </section>
-            <section class="card">
+            <section class="card" data-aos="fade-left">
                 <img src="assets/images/home_4.png"" alt="">
                 <div>
                     <h3>Home Four</h3>
@@ -47,7 +48,7 @@
                     <a href="" class="btn">See Details</a>
                 </div>
             </section>
-            <section class="card">
+            <section class="card" data-aos="fade-right">
                 <img src="assets/images/home_5.png"" alt="">
                 <div>
                     <h3>Home Five</h3>
@@ -56,6 +57,12 @@
                 </div>
             </section>
         </main>
-   
-</body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 1000
+        });
+    </script>
+    </body>
 </html>
